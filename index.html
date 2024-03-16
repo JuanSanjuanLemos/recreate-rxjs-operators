@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recreate Operators</title>
+
+    <style>
+        #canvas {
+            border: 2px dotted #ccc;
+            border-radius: 8px;
+            cursor: crosshair;
+        }
+        body {
+            overflow: hidden;
+        }
+
+        .clear-btn {
+            background-color: #b1fd72;
+            padding: 6px 12px;
+            border: transparent;
+            border-radius: 8px;
+            color: #919191;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .col-md-12 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <canvas id="canvas"></canvas>
+            </div>
+        </div>
+        <button class="clear-btn" id="clear-btn">Limpar</button>
+    </div>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
